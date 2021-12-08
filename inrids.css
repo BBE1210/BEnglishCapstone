@@ -1,0 +1,704 @@
+html, body {
+  height: 100%;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+    
+    /*background: #fff; */
+  }
+  
+  #logo {
+    width: 150%;
+    padding-bottom: 50px;
+  }
+  #header 
+  {
+    background: linear-gradient(to right,red, yellow,green); 
+    padding: 20px;
+    color: black;
+    text-align: center;
+    border-bottom: red;
+    border-bottom-style: double;
+  }
+  
+ /* #tcontainer {
+    text-align: center;
+    border:  1px solid green;
+    padding:  5px;
+  } */
+
+  #navigation 
+  {
+    float: left;
+    width: 100%;
+    background: white;
+    border-bottom: red;
+    border-bottom-style: double;
+  }
+
+  #navigation ul 
+  {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navigation ul li 
+  {
+    list-style-type: none;
+    display: inline;
+  }
+  
+  #navigation li a 
+  {
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+  }
+  
+  #navigation li a:hover 
+  {
+    background: lightgray;
+  }
+  
+/*   Scroll Images */
+#scroll-slow {
+  height: 100px;	
+  overflow: hidden;
+  position: relative;
+ }
+ 
+ #scroll-slow #inner 
+ {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+ 
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);	
+  transform:translateX(100%);
+  /* Apply animation to this element */	
+  -moz-animation: scroll-slow 25s linear infinite;
+  -webkit-animation: scroll-slow 25s linear infinite;
+ 
+  /* -moz-animation: scroll-slow 25s linear infinite; */
+   /* -webkit-animation: scroll-slow 25s linear infinite; */
+ 
+   /*  animation: scroll-slow 25s linear infinite; */
+ animation: scroll-slow 35s linear infinite;
+ }
+ 
+ /* Move it (define the animation) */
+ @-moz-keyframes scroll-slow 
+ {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+ }
+ 
+ @-webkit-keyframes scroll-slow 
+ {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+ }
+ 
+ @keyframes scroll-slow 
+ {
+  0%   { 
+  -moz-transform: translateX(100%); /* Browser bug fix */
+  -webkit-transform: translateX(100%); /* Browser bug fix */
+  transform: translateX(100%); 		
+  }
+  100% 
+ { 
+  -moz-transform: translateX(-100%); 
+  -webkit-transform: translateX(-100%); 
+  transform: translateX(-100%); 
+  }
+ }
+.marquee-outer {
+  height: 100px;	
+  overflow: hidden;
+  position: relative;
+  color: orange;
+ }
+ .marquee-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+ 
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);	
+  transform:translateX(100%);
+  /* Apply animation to this element */	
+  -moz-animation: scroll-left 5s linear infinite;
+  -webkit-animation: scroll-left 5s linear infinite;
+  animation: scroll-left 5s linear infinite;
+ }
+ /* Move it (define the animation) */
+ @-moz-keyframes scroll-left {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+ }
+ @-webkit-keyframes scroll-left {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+ }
+ @keyframes scroll-left 
+ {
+  0%   { 
+  -moz-transform: translateX(100%); /* Browser bug fix */
+  -webkit-transform: translateX(100%); /* Browser bug fix */
+  transform: translateX(100%); 		
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Browser bug fix */
+  -webkit-transform: translateX(-100%); /* Browser bug fix */
+  transform: translateX(-100%); 
+  }
+ }
+
+ #divnavbar
+ {
+  width: 100%; height: 100%; border: 1px outset green
+ }
+
+ #sidebar 
+ {
+   background: linear-gradient(to right,red, yellow, green); 
+   overflow: hidden;
+   /*width: 19%; 
+   height: 100%; 
+   float: right;*/
+   text-align: center;
+   /* padding-block: 100%; */
+ }
+ 
+
+ #divsidebar
+ {
+     text-align: left; border:  1px solid green; width: 100%; height: 100%;
+ }
+ 
+ #divparagraph1 
+ {
+  height: 2%; width: 80%; border: 1px outset red; float: left; 
+  position: relative; background-color: yellow;  color: yellow
+ }
+
+.divparagraph2 
+{
+  color: green; font-size: 25px; font-style: italic; text-align: center;
+}
+
+.beachimg 
+{
+  width:10%; border-radius: 50%;
+    border-color: green; border-bottom-style: groove
+}
+
+.divparagraph3
+{
+  color: red; font-weight: bold
+}
+
+.divparagraph4
+{color: green;  font-family: Verdana, sans-serif;
+  font-size: 17px
+}
+
+.divparagraph5
+ {
+  color: green; font-size: 20px; font-family: Arial, Helvetica, sans-serif; 
+   text-align: left; padding-left: 5px
+}
+.divimg1
+{
+  width: 80%; height: 30%;  object-fit: fill; padding-left: 28px
+}
+
+.divspan1{
+  color: red
+}
+
+.span1h1
+{
+  font-size: 25PX;
+}
+
+.span1h1
+{
+  font-size: 25PX;
+}
+
+#contentwrapper{
+  text-align: left; border:  1px solid green; width: 100%; height: 100%; background-color: yellow;
+}
+
+#productswrapper{
+   width: 100%; height: 100%;
+}
+
+#tablerow1
+{
+  background-color: yellow;
+}
+
+#tablerow2
+{
+  background-color: yellow;
+}
+#content-container 
+   table{
+     border-collapse: collapse;
+     border-spacing: 5px;
+     width: 100%;
+     margin-top: 5px;
+  }
+
+  #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+
+.accordion {
+  /*background-color: #eee;*/
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  border: green;
+  border-bottom-style: double;
+  
+}
+
+table{
+   width: 100%; margin: none; margin-top: -19px; height: 100%;
+}
+
+td:fourth-child {
+  background-color: red;
+}
+th:nth-child(odd)
+{
+  background: red;
+}
+th:nth-child(even)
+{
+  background: red;
+}
+
+
+.panel-flashy {
+  border-color: #ff934f;
+}
+
+.panel-flashy > .panel-heading {
+  color: #fff;
+  background-color: #ff934f;
+  border-color: #ff934f;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+ /* padding: 0 18px;*/
+  display: none;
+  overflow: hidden;
+  padding-left: 10px;
+  color: green; 
+
+}
+
+.panel1 {
+  padding: 0 18px;
+  display: none;
+  background-color: red;
+  overflow: hidden;
+}
+
+  td img { 
+    max-width: 100%;
+    height: auto;
+    border: 1px solid red;
+    box-shadow: green;
+    border-bottom-style: groove;   
+  }
+
+  #header h1 {
+    margin: 0;
+  }
+
+.foodimage
+{ 
+   width: 110px;  border-color: red; 
+  /* border-bottom-style: outset; */
+  padding-left: 20px;
+  box-shadow: 1000px yellow;
+
+}
+
+.foodimage3
+{ 
+   width: 110px;  border-color: red; 
+  /* border-bottom-style: outset; */
+  padding-left: 10px;
+  box-shadow: 2000px yellow;
+}
+
+.foodimageclass{
+  padding-left: 30px;
+}
+
+.vegan{
+    padding-left: 5px; 
+    font-family: Verdana, sans-serif; font-size: 14px; 
+    color: red;
+}
+
+.veganimg {
+   width:100px; height: 70px; padding-left: 30px;
+
+}
+
+.foodparagraph
+  {  font-family:Verdana, sans-serif;  font-style: normal;
+  }
+
+.foodparagraph1 
+  {  
+    font-size: 16px; margin-bottom: -25px; 
+    border-left: 20px; font-weight: bold
+  }
+
+  .foodparagraph2 
+  {  
+  font-size: 13px; 
+  }
+
+  #content {
+    clear: left;
+    float: left;
+    width: 60%;
+    padding: 20px 0;
+    margin: 0 0 0 4%;
+    display: inline;
+  }
+  
+  #content h2 {
+    margin: 0;
+  }
+  
+  #aside {
+    float: right;
+    width: 33%;
+    padding: 20px 0;
+    margin: 0 3% 0 0;
+    display: inline;
+  }
+
+  #sidebarmain
+ {
+   background: linear-gradient(to right,red, yellow, green); 
+   overflow: hidden;
+   width: 19%; 
+   height: calc(100vh - 50px); 
+   float: right;
+   text-align: center;
+ }
+
+  
+  #aside h3 {
+    margin: 0;
+  }
+  
+  .backgroundimg 
+{
+width: 100%;
+}
+ /* img{
+    width: 10%;
+  /*margin: auto 5%; 
+  }*/
+
+  #footerp1 {
+    text-align: left;
+  }
+
+  #footerp2 {
+    text-align: right;
+  }
+  #footer {
+   clear: left; 
+    border:solid red;
+    background: linear-gradient(to right,red, yellow,green);
+    height: 2%;
+    display:flex;
+  }
+  .footer-left {
+    text-align: left; 
+    padding-left: 2px; 
+    flex: 1;
+    float: left;
+  }
+  .footer-right {
+    text-align: right;
+    padding-right: 3px;
+    float:right;
+    flex:1;
+  }
+   .wel2
+   {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic; color: green; 
+   }
+  
+  .backgroundimg 
+  {
+  width: 100%;
+  }
+  
+
+#bchimg {
+  width: 700px; height: 320px;  object-fit: cover;
+}
+
+.container2 {
+    position: relative;
+    
+    color: red;
+  }
+
+
+#top-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+#top-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+#bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+#centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%)
+}
+  /* Media Print Styles */
+  
+  @media print 
+  {
+    #footer, 
+    #header, 
+    #navigation 
+    #sidebar
+    #scroll-slow
+    #inner{
+      display:none;
+    }
+  
+  #content {
+    width: 100%;
+    margin-right: 0px;
+  }
+  #logo { display: none;}
+  #aside {
+    float: none;
+    display: block;
+    page-break-inside: avoid;
+  }
+  }
+
+  
+ /* .mySlides {display: none}
+img {vertical-align: middle;} */
+
+.mySlides1, .myslides2, .mySlides3 {display: none}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute; 
+  top: 50%;
+  width: auto;
+  padding-left: 6px;
+  padding-right: 20px;
+  /*padding: 18px; */
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  align-items: center;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute; 
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  /* Small devices Media Types */
+  
+  @media only screen and (max-width: 450px) 
+  {
+    
+    body {padding: 0px;}
+    
+    #header {
+      position:fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 35px;
+    }
+    #aside, #logo, #scroll-slow, #sidebar, #footer, #bchimg, .foodimage{
+      display: none;
+    }
+   
+  #content {
+    width: 100%
+  }
+  
+  #logo { display: none;}
+  #navigation {
+    margin-top: 75px;
+  }
+  
+  #navigation ul li {
+    display: block;
+  }
+  
+  #navigation ul li a
+  { float: none;}
+  }
+  
+  /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  /* Tablet Media Types */
+  
+  @media only screen and (max-width: 730px) {
+    #aside 
+    {
+      float: none;
+      display: block;
+      page-break-inside: avoid;
+    }
+
+    #logo { display: none;}
+   
+      #sidebar, #logo, #scroll-slow, #footer {
+      display: none;
+    }
+  #content {
+    width: 90%;
+    margin: auto 5%;
+  }
+  
+  }
+  
